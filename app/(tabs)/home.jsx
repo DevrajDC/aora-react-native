@@ -8,11 +8,8 @@ import {
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import SearchInput from "../../components/SearchInput";
 import { images } from "../../constants";
-import Trending from "../../components/Trending";
-import EmptyState from "../../components/EmptyState";
-import VideoCard from "../../components/VideoCard";
+import { EmptyState, SearchInput, Trending, VideoCard } from "../../components";
 import { getAllPosts, getLastestPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/useAppwrite";
 
