@@ -1,19 +1,14 @@
-import {
-  View,
-  Text,
-  FlatList,
-  Image,
-  RefreshControl,
-  Alert,
-} from "react-native";
+import { View, Text, FlatList, Image, RefreshControl } from "react-native";
 import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../../constants";
 import { EmptyState, SearchInput, Trending, VideoCard } from "../../components";
 import { getAllPosts, getLastestPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/useAppwrite";
+import { useGlobalContext } from "../../context/GlobalProvider";
 
 const Home = () => {
+  const { user } = useGlobalContext();
   const { data: posts, refetch } = useAppwrite(getAllPosts);
   const { data: latestposts } = useAppwrite(getLastestPosts);
 
@@ -48,7 +43,7 @@ const Home = () => {
                   Welcome Back
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  Devraj Chatribin
+                  {user?.username}
                 </Text>
               </View>
 
