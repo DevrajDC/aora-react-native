@@ -1,4 +1,4 @@
-![aora](https://github.com/DevrajDC/aora-react-native/assets/65373279/a0975a5e-0e6b-48f6-b953-f40198014994)
+![aora](https://github.com/DevrajDC/aora-react-native/assets/65373279/0831a528-0eef-4ed3-91ea-b7f720805622)
 <div>
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
